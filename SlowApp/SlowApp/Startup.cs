@@ -36,7 +36,7 @@ namespace SlowApp
                 }));
             });
 
-            services.AddScoped<ItemsVerifier>();
+            services.AddScoped<ItemsLogger>();
             services.AddScoped<ItemsProvider>();
         }
 

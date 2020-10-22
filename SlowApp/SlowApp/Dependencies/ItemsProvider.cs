@@ -8,19 +8,21 @@ namespace SlowApp.Dependencies
 {
     public class ItemsProvider
     {
-        private readonly ItemsVerifier _verifier;
         private readonly SlowAppDbContext _db;
+        private readonly ItemsLogger _logger;
 
-        public ItemsProvider(ItemsVerifier verifier, SlowAppDbContext db)
+        public ItemsProvider(SlowAppDbContext db, ItemsLogger logger)
         {
-            _verifier = verifier;
             _db = db;
+            _logger = logger;
         }
 
         public virtual async Task<List<Item>> GetItemsAsync()
         {
             var availableItems = await (from i in _db.Items select i).ToListAsync();
-            return await _verifier.VerifyItemsAsync(availableItems);
+            await _logger.VerifyItemsAsync(availableItems);
+
+            return availableItems;
         }
     }
 }
