@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SlowApp.Entities
+namespace SlowApp.Core.Entities
 {
     public class Item
     {

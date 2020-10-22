@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using SlowApp.Entities;
+using SlowApp.Core.Entities;
 
-namespace SlowApp.Dependencies
+namespace SlowApp.Core.Dependencies
 {
     public class ItemsLogger
     {

@@ -1,3 +1,5 @@
 /SlowApp/.vs
 /SlowApp/SlowApp/obj
 /SlowApp/SlowApp/bin
+/SlowApp/SlowApp.Core/obj
+/SlowApp/SlowApp.Core/bin/Debug/netstandard2.0

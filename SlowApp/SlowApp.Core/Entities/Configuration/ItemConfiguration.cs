@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace SlowApp.Entities.Configuration
+namespace SlowApp.Core.Entities.Configuration
 {
     public class ItemConfiguration : IEntityTypeConfiguration<Item>
     {

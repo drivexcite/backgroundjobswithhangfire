@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using SlowApp.Entities;
+using SlowApp.Core.Entities;
 
-namespace SlowApp.Dependencies
+namespace SlowApp.Core.Dependencies
 {
     public class ItemsProvider
     {

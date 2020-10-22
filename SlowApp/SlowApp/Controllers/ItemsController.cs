@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SlowApp.Dependencies;
+using SlowApp.Core.Dependencies;
 
 namespace SlowApp.Controllers
 {

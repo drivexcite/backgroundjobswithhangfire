@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SlowApp.Entities.Configuration;
+using SlowApp.Core.Entities.Configuration;
 
-namespace SlowApp.Entities
+namespace SlowApp.Core.Entities
 {
     public class SlowAppDbContext : DbContext
     {
