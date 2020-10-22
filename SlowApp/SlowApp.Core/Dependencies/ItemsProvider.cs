@@ -20,7 +20,7 @@ namespace SlowApp.Core.Dependencies
         public virtual async Task<List<Item>> GetItemsAsync()
         {
             var availableItems = await (from i in _db.Items select i).ToListAsync();
-            await _logger.VerifyItemsAsync(availableItems);
+            await _logger.ProcessItemsAsync(availableItems);
 
             return availableItems;
         }
